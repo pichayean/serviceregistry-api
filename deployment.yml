@@ -6,8 +6,8 @@ spec:
   selector:
     app: serviceregistry-api-pod
   ports:
-  - port: 8002
-    nodePort: 30802
+  - port: 8009
+    nodePort: 30809
     protocol: TCP
     targetPort: 5016
   type: NodePort
