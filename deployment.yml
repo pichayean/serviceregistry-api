@@ -9,7 +9,7 @@ spec:
   - port: 8009
     nodePort: 30809
     protocol: TCP
-    targetPort: 5016
+    targetPort: 80
   type: NodePort
   
 ---
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: serviceregistry-api-container
-        image: serviceregistry-api:v1
+        image: serviceregistry-api:v2
         resources:
           limits:
             memory: "64Mi"
