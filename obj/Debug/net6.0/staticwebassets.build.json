@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Jrn/G4cIb49VWrnvGpjQA1onhYyOZyuElLgZQJNt6dM=",
+  "Source": "service-register",
+  "BasePath": "_content/service-register",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

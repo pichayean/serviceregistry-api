@@ -1,0 +1,24 @@
+{
+  "serviceRegistration": [
+    {
+      "id": 0,
+      "serviceName": "test",
+      "port": null,
+      "credential": null,
+      "serviceType": null,
+      "repository": null,
+      "remark": null,
+      "todo": null
+    },
+    {
+      "id": 1,
+      "serviceName": "test",
+      "port": null,
+      "credential": null,
+      "serviceType": null,
+      "repository": null,
+      "remark": null,
+      "todo": null
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "7e0ad73c-41ae-4a22-95c5-20fcf69cebf2",
+		"name": "MINIApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18018003"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"Password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/accounts/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"accounts",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ServiceRegistrations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJqdGkiOiI2YTdkYWYzYi0xZjU2LTQ1YmYtYTFkOS1mMDgzZTQ2YTA0NDEiLCJuYmYiOjE2NTc2MTcxNzAsImV4cCI6MTY1NzYxNzQ3MCwiaWF0IjoxNjU3NjE3MTcwLCJpc3MiOiJ0cnVzdG1hY3VzLmNvbSIsImF1ZCI6InRydXN0bWFjdXMuY29tIn0.fpU5f9sEg9XDID26UNyLySa6aRUjsMv7xh5431KNP8fLqRjCFejdhrCxKyaSEmMpvqwS-Fkc1mK-LkiAvio27Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5016/ServiceRegistrations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"ServiceRegistrations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ServiceRegistrations/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJqdGkiOiI2YTdkYWYzYi0xZjU2LTQ1YmYtYTFkOS1mMDgzZTQ2YTA0NDEiLCJuYmYiOjE2NTc2MTcxNzAsImV4cCI6MTY1NzYxNzQ3MCwiaWF0IjoxNjU3NjE3MTcwLCJpc3MiOiJ0cnVzdG1hY3VzLmNvbSIsImF1ZCI6InRydXN0bWFjdXMuY29tIn0.fpU5f9sEg9XDID26UNyLySa6aRUjsMv7xh5431KNP8fLqRjCFejdhrCxKyaSEmMpvqwS-Fkc1mK-LkiAvio27Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/ServiceRegistrations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"ServiceRegistrations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ServiceRegistration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJqdGkiOiI2YTdkYWYzYi0xZjU2LTQ1YmYtYTFkOS1mMDgzZTQ2YTA0NDEiLCJuYmYiOjE2NTc2MTcxNzAsImV4cCI6MTY1NzYxNzQ3MCwiaWF0IjoxNjU3NjE3MTcwLCJpc3MiOiJ0cnVzdG1hY3VzLmNvbSIsImF1ZCI6InRydXN0bWFjdXMuY29tIn0.fpU5f9sEg9XDID26UNyLySa6aRUjsMv7xh5431KNP8fLqRjCFejdhrCxKyaSEmMpvqwS-Fkc1mK-LkiAvio27Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n  \"serviceName\": \"string\",\r\n  \"port\": \"string\",\r\n  \"credential\": \"string\",\r\n  \"serviceType\": \"string\",\r\n  \"repository\": \"string\",\r\n  \"remark\": \"string\",\r\n  \"todo\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5016/ServiceRegistration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"ServiceRegistration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT ServiceRegistration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJqdGkiOiI2YTdkYWYzYi0xZjU2LTQ1YmYtYTFkOS1mMDgzZTQ2YTA0NDEiLCJuYmYiOjE2NTc2MTcxNzAsImV4cCI6MTY1NzYxNzQ3MCwiaWF0IjoxNjU3NjE3MTcwLCJpc3MiOiJ0cnVzdG1hY3VzLmNvbSIsImF1ZCI6InRydXN0bWFjdXMuY29tIn0.fpU5f9sEg9XDID26UNyLySa6aRUjsMv7xh5431KNP8fLqRjCFejdhrCxKyaSEmMpvqwS-Fkc1mK-LkiAvio27Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n  \"serviceName\": \"string\",\r\n  \"port\": \"string\",\r\n  \"credential\": \"string\",\r\n  \"serviceType\": \"string\",\r\n  \"repository\": \"string\",\r\n  \"remark\": \"string\",\r\n  \"todo\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5016/ServiceRegistration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"ServiceRegistration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ServiceRegistration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJqdGkiOiI2YTdkYWYzYi0xZjU2LTQ1YmYtYTFkOS1mMDgzZTQ2YTA0NDEiLCJuYmYiOjE2NTc2MTcxNzAsImV4cCI6MTY1NzYxNzQ3MCwiaWF0IjoxNjU3NjE3MTcwLCJpc3MiOiJ0cnVzdG1hY3VzLmNvbSIsImF1ZCI6InRydXN0bWFjdXMuY29tIn0.fpU5f9sEg9XDID26UNyLySa6aRUjsMv7xh5431KNP8fLqRjCFejdhrCxKyaSEmMpvqwS-Fkc1mK-LkiAvio27Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5016/ServiceRegistration/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"ServiceRegistration",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
