@@ -1,0 +1,3 @@
+docker run -d -p 80:80 serviceregistry-api:v2
+
+docker build -t serviceregistry-api:v2 .
