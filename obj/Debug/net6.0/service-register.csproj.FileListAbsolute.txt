@@ -71,3 +71,4 @@ D:/Workspace/Samples/Dotnet6/service-register/bin/Debug/net6.0/data.json
 /Users/pichayeanyensiri/workspaces/dotnet/service-register/obj/Debug/net6.0/service-register.pdb
 /Users/pichayeanyensiri/workspaces/dotnet/service-register/obj/Debug/net6.0/service-register.genruntimeconfig.cache
 /Users/pichayeanyensiri/workspaces/dotnet/service-register/obj/Debug/net6.0/ref/service-register.dll
+/Users/pichayeanyensiri/workspaces/dotnet/service-register/bin/Debug/net6.0/data.json

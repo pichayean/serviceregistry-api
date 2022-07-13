@@ -37,7 +37,7 @@ public class ServiceRegisterService : IServiceRegisterService
         var updateModel = _collection.AsQueryable().FirstOrDefault(_ => _.Id == model.Id);
         if (updateModel == null)
             throw new Exception("Data not found!");
-        await _collection.UpdateOneAsync(updateModel.Id, updateModel);
+        await _collection.UpdateOneAsync(updateModel.Id, model);
 
         return updateModel;
     }
